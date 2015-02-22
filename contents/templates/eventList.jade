@@ -1,0 +1,16 @@
+div.events
+	each item in items
+		div.listitem
+			div.row.nomargin
+				div.six.columns
+					h5.nomargin
+						a(href="#", style="color: white; text-decoration: none")
+							= item.type
+					p.nomargin
+						h6= "by "
+							b= item.actor.login
+				div.six.columns
+					div(style="float: right; text-align: right")
+						h6.nomargin= item.created_at
+						h6.nomargin= item.repo.name
+						h6.nomargin= item.id
