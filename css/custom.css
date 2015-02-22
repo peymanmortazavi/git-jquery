@@ -18,3 +18,73 @@ img {
 	border: 1px #aaa solid;
 	padding: 2px;
 }
+
+body {
+	
+	font-family: "Avenir";
+	font-weight: 200;
+	
+}
+
+
+.detail {
+	
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 2px solid;
+	box-shadow: 2px;
+	background-color: rgba(124, 255, 255, 0.6);
+	overflow: hidden;
+	
+}
+
+.detailContentView {
+	
+	margin: 0px;
+	padding: 20px;
+	padding-top: 0px;
+	
+}
+
+.nomargin {
+	
+	margin: 0px
+	
+}
+
+.list {
+	
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 2px solid;
+	box-shadow: 2px;
+	background-color: rgba(255, 200, 150, 0.9);
+	overflow: hidden;
+	background-image: url(http://wallaupun.com/wp-content/uploads/2014/05/abstract_art_1920_x_1080_970.jpg)
+	
+}
+
+.events {
+	
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 2px solid;
+	box-shadow: 2px;
+	background-color: rgba(255, 200, 150, 0.9);
+	overflow: hidden;
+	background-image: url(http://2.bp.blogspot.com/-_Zy7wjNBQlc/T89x5yXhdGI/AAAAAAAAAiE/8RlIGwkg86Q/s1600/il_fullxfull.298177706%255B1%255D.jpg);
+	
+}
+
+.listitem {
+	
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-bottom: 1px;
+	height: 80px;
+	color: white;
+	
+}
