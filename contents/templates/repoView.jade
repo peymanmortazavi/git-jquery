@@ -1,1 +1,62 @@
-h5= item.full_name
+div.detail
+	h3(style="padding: 15px; background-color: rgba(0, 0, 0, 0.4); color: white; text-align: center")= item.name
+	div.detailContentView
+		p.nomargin
+			b= "full name "
+			h5= item.full_name
+			
+		p.nomargin
+			b= "who's owner? "
+			div.row
+				img(src=item.owner.avatar_url, style="width: 50px; float: left; border-radius: 10px; background-color: white;")
+				h5(style="float:left; margin-left: 10px")= item.owner.login
+			
+		p.nomargin
+			b= "open issues "
+			h5= item.open_issues
+			
+		p.nomargin
+			b= "is it a fork? "
+			h5= item.fork ? "Yup!" : "Nope, it's original"
+			
+		p.nomargin
+			b= "how many forked this? "
+			h5= item.forks
+			
+		p.nomargin
+			b= "what's default branch? "
+			h5= item.default_branch
+			
+		p.nomargin
+			b= "created at"
+			h5= item.created_at
+			
+		p.nomargin
+			b= "description"
+			h5= item.description ? item.description : "there is no description :("
+			
+		p.nomargin
+			b= "language"
+			h5= item.language ? item.language : "no language"
+			
+		p.nomargin
+			b= "network count"
+			h5= item.network_count
+			
+		p.nomargin
+			b= "pushed at"
+			h5= item.pushed_at
+			
+		p.nomargin
+			b= "has downloads?"
+			h5= item.has_downloads ? "Yes! " : "nope :("
+				-if(item.has_downloads)
+					a(href=item.downloads_url)= "Get list of downloads"
+					
+		p.nomargin
+			b= "subscribers"
+			h5= item.subscribers_count
+			
+		p.nomargin
+			b= "stargazers"
+			h5= item.stargazers_count
